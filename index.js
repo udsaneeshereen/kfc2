@@ -13,7 +13,7 @@ app.all("/", (req, res) => {
 });
 
 app.get("/food", (req, res) => {
-  connection.query("select * from food", function (err, results, fields) {
+  connection.query("select * from tbl_food", function (err, results, fields) {
     res.send(results);
   });
 });
